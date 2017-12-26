@@ -17,3 +17,7 @@ data201002=x[grep("2010-02",x$最高氣溫時間),]
 plot(data201002$測站氣壓,type="o", pch=16, col="black",las=1,xlab="日期" ,
      ylab="大氣壓",main="2010/02", axes=TRUE)
 
+mode(x)
+mode(data201002)
+r=c("jessica","hebe")
+mode(r)
