@@ -4,4 +4,6 @@ identical(number,number1)
 suit = c(rep("黑桃",13),rep("紅心",13),rep("方塊",13),rep("梅花",13))
 cards = paste(suit,number)
 str(cardscards)
-sample(cards,5)
+sample(cards,7)
+
+paste(sample(1:6,1),sample(1:6,1),sample(1:6,1))
