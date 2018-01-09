@@ -9,7 +9,8 @@ getweather=function(FILE,LABEL) {
           "日照率", "全天空日射量","能見度","A型蒸發量")
   x=read.csv(FILE,skip=1,header=F)
   names(x) = title; y=x[,c(1,2,8,9,11,14)];
-  y['label']=LABEL; return (y) ; }
+  y['label']=LABEL; return (y) ; 
+}
 
 jul = getweather('201707.csv', '201707')
 boxplot(jul[,c(3,4,5)],ylab="氣溫" ,xlab="201707", las=1)
